@@ -1,0 +1,87 @@
+
+:root {
+    --brang-green: #00856F;
+    --brand-green-light: #DCE9E2;
+    --brand-green-light-O2: #F7F9F9;
+    --brand-green-hover: #00453A;
+}
+
+.container-1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 72px;
+    /* background: linear-gradient(90deg,#d5d5d5,rgb(50, 100, 50), #e4532a); */
+}
+
+.container-1 h1 {
+    background: linear-gradient(90deg,
+        #d5d5d5,
+        rgb(50, 100, 50),
+        #e4532a);
+    background-clip: text;
+    color: transparent; 
+}
+
+.container2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 .para {
+    width: 40rem;
+    height: 10rem;
+    background-color: bisque;
+    display: flex;
+}
+
+.container2 h2 {
+    writing-mode: vertical-lr;
+}
+
+.container2 input {
+    writing-mode: vertical-lr;
+}
+
+.container3 img {
+    width: 900px;
+    transform: scaleX(-1);
+    /* transform: scale(-1); apsivercia*/
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* smooth - svelniai pereina prie reikalingos dalies */
+
+.bodxSmooth {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.bodxSmooth div {
+    min-width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    scroll-snap-align: center;
+}
+
+
+.container-5 div:nth-child(odd) {
+    background-color: var(--brang-green);
+}
+
+.container-5 div:nth-child(even) {
+    background-color: var(--brand-green-light)
+}
